@@ -36,11 +36,11 @@ result.appendChild(div)
 // document.getElementById('result').innerHTML += '<p>' + user.firstName + '</p>';
 // document.getElementById('result').innerHTML += `<p>Hej jag heter ${user.firstName}</p>`;
 
-results.innerHTML += '<h1>Detta är en rubrik</h1>';
-results.innerHTML += '<p>' + user.firstName + '</p>';
-results.innerHTML += `<p>Hej jag heter ${user.firstName}</p>`;
+result.innerHTML += '<h1>Detta är en rubrik</h1>';
+result.innerHTML += '<p>' + user.firstName + '</p>';
+result.innerHTML += `<p>Hej jag heter ${user.firstName}</p>`;
 
-test[0].innerHTML = '<h2>test</h2>';
-test[0].style = 'color: green; background.color:grey;';
+test.innerHTML = '<h2>test</h2>';
+test.style = 'color: green; background-color: #333;'
 
 console.log(result);
