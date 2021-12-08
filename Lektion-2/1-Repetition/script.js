@@ -126,3 +126,70 @@ let num1 = '23';
 
 // console.log(value += 2);    // Manipulerar ursprungsvärdet
 // console.log(value)
+
+
+// console.log(Number(10));
+// console.log(Number('10'));
+// console.log(Number('10.23'));
+// console.log(Number('10,23'));
+// console.log(Number('Daniel'));
+// console.log(Number('    10.23'));
+// console.log(Number('10 23'));
+
+
+// console.log(Math.PI)
+// console.log(Math.sqrt(4));
+// console.log(Math.random() * 100);
+
+// function random(min, max) {
+//     const num = Math.floor(Math.random() * (max - min +1)) +min ;
+//     return num;
+// }
+// console.log(random(3, 7));
+
+// OBJECT   Talar om att det är ett objekt med{}
+
+const user = {
+    firstName: 'Daniel',
+    account: {
+        email: 'daniel@dkmusic.se',
+        password: '1234',
+    }
+};
+user.lastName = 'Karlsson';
+user.account.password = '12345';
+
+// let q = new URLSearchParams(window.location.search).get('q')
+
+// console.log(q)
+// console.log(user.firstName);
+// console.log(user[q]);
+
+
+// JSON JavaScript Object Notation
+// json = '{"firstName": "Daniel", "lastName": "Karlsson"}'
+
+const json = JSON.stringify(user);
+const js = JSON.parse('{"firstName": "Daniel", "lastName": "Karlsson"}');
+
+// console.log(user);
+// console.log(json);
+// console.log(js)
+
+// delete user.account;
+// console.log(user;
+
+
+
+// DESTRUCTURE
+
+const {firstName, lastName} = user;
+const {firstName: fName, lastName: lName} = js;
+
+let text = `Hej jag heter ${firstName} ${lastName}`;
+// let text2 = `Hej jag heter ${firstName} ${lastName}`;
+let text3 = `Hej jag heter ${fName} ${lName}`;
+
+console.log(text);
+// console.log(text2);
+console.log(text3);
