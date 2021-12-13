@@ -116,18 +116,56 @@ const obj3 = {
 // names.sort();   //Sortera i bokstasordning
 
 const newNames = ['Aa', 'Bb', '1a', '2a', 'aa', 'bb']
-const numbers = [5, 6, 7, 8, 9, 10, 11, 12, 30, 40];
+// const numbers = [1, 2, 3, 4, 5];
 
 
-console.log(names);
+// console.log(names);
 // names.reverse(); //Vänder på arrayen så först blir sist osv.
 // console.log(names);
 
 // names.sort().reverse(); // Sortera i bokstavsordning baklänges
 // console.log(names)
 
-newNames.sort();
-console.log(newNames);
+// newNames.sort();
+// console.log(newNames);
 
-numbers.sort();
-console.log(numbers);
+// numbers.sort();
+// console.log(numbers);
+
+
+// ------------------------------------------------------------
+
+// High Order Array Methods
+// En high order method tar antingen emot eller returnerar en funktion
+
+
+
+// const sum = numbers.reduce(function(acc, current) {
+//     // console.log('acc: ' + acc, 'current: ' + current);
+//     return acc + current
+// })
+
+// console.log(sum);
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const filteredArray = numbers.filter(num => {
+//     return num < 3
+// })
+// console.log(filteredArray);
+
+
+// const mappedArray = numbers.map((num, index) => {
+//     return `index: ${index} - nummer: ${num}`
+// })
+// console.log(mappedArray);
+
+
+// const test = [];
+// numbers.forEach(num => {
+//     test.push(num);
+//     console.log(num)
+// })
+
+// console.log(numbers);
+// console.log(test)
