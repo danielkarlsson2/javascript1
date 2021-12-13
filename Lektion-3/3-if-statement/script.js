@@ -161,6 +161,8 @@ else {
     console.log('Okänt namn');
 }
 
+
+
 let value = 5;
 if(value === 1) {console.log('Värdet är 1') }
 else if(value === 2) {console.log('Värdet är 2') }
@@ -169,3 +171,24 @@ else if(value === 4) {console.log('Värdet är 4') }
 else if(value === 5) {console.log('Värdet är 5') }
 else if(value === 6) {console.log('Värdet är 6') }
 else {console.log('Värdet finns inte i if satsen')}
+
+
+// Ternary operator
+
+let age = 17;
+
+let drink = age >= 18 ? 'Beer' : 'Coke';
+// Samma sak som
+/* let drink;
+if(age >= 18) {
+    drink = 'Beer'
+}
+else {
+    drink = 'Coke'
+} */
+console.log(drink);
+
+// T ex
+{/* <div class={loggedIn? 'd-flex' : 'd-none'}>
+
+</div> */}
