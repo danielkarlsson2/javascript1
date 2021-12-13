@@ -63,26 +63,86 @@ const family = ['Kjell', 'Gun-britt', 'Andreas', 'Daniel', 'Hanna', 'Ines'];
 
 family.sort();
 
-console.log(family);
+// console.log(family);
 
-console.log(family.indexOf('Daniel'));
+// console.log(family.indexOf('Daniel'));
 
 family.splice(family.indexOf('Daniel')+1, 0, 'Hans', 'Tommy');
 
-console.log(family);
+// console.log(family);
 
 family.pop();
 family.unshift('Kjell');
 
-console.log(family);
+// console.log(family);
 
 
 
 let counter = 0;
 family.forEach(() => {
     counter++;
-    console.log(counter);
+    // console.log(counter);
 })
 
-console.log(family.length);
+// console.log(family.length);
 
+const greetings = family.map(name => {
+    return 'Hejsan ' + name;
+})
+
+greetings.forEach(greet => {
+    // console.log(greet);
+})
+
+// --------------END------------------
+
+
+// let selected = array.map(person=> {
+//     return person.lastName == 'Karlsson';
+// })
+
+// FILTER tar bort det som inte matchar
+// let selected = array.filter(person => {
+//     return person.lastName == 'Karlsson';
+// })
+
+// Gör man bara en enda sak kan man skriva på samma rad, då blir => samma som return
+// let selected = array.filter(person => {
+//     return person.lastName == 'Karlsson';
+// })
+// .map(person => {
+//     return person.firstName
+// })
+// .sort();
+
+// console.log(selected);
+
+// const shoppingList = ['mjölk', 'ägg', 'bröd'];
+
+// console.log(shoppingList.includes('smör'));
+
+// SET
+
+const shoppingList = new Set();
+shoppingList.add('mjölk');
+shoppingList.add('ägg');
+shoppingList.add('smör');
+shoppingList.add('ägg');
+shoppingList.add('ägg');
+shoppingList.add('ägg');
+shoppingList.add('bröd');
+
+
+console.log(shoppingList);
+
+// const list = [];
+shoppingList.forEach(item => {
+    // console.log(item);
+    // list.push(item);
+})
+
+// let list = Array.from(shoppingList);
+// const list = [...shoppingList];
+const list = [...shoppingList];
+
+console.log(list)
