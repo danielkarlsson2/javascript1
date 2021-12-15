@@ -15,3 +15,6 @@ nav {
     color: white;
     margin: 1rem;
 }
+.d-none {
+    display: none;
+}
