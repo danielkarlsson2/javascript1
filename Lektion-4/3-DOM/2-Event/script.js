@@ -80,14 +80,4 @@ firstName.addEventListener('focus', test)
 //     firstName.classList.add('focus-red')
 // })
 
-loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // console.log(firstName.value)
-    if(firstName.value.trim() === '')
-    return;
-
-    console.log(firstName.value)
-    console.log('validerar formulär')
-    console.log('validering klar! skickar till databasen')
-})
+console.log(document.getElementById('input').value);

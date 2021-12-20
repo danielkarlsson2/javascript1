@@ -4,6 +4,10 @@
     height: 200px;
 }
 
-#firstName:focus {
+/* #firstName:focus {
     outline:3px solid red;
+} */
+
+.focus-red {
+    
 }
