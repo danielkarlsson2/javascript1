@@ -99,7 +99,8 @@ body, html {
     margin-top: .3rem;
     color: var(--clr-error);
     font-size: .9rem;
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 
 .is-invalid .form-control {
@@ -109,7 +110,7 @@ body, html {
 
 .is-invalid .invalid-input {
     display: block;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 .is-valid .form-control {

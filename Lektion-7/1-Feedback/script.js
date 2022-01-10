@@ -14,9 +14,7 @@ const validateText = (input) => {
         setError(input, 'Name must be at least 2 chars long')
     }
     else {
-        const parent = input.parentElement;
-        parent.classList.remove('is-invalid');
-        parent.classList.add('is-valid');
+        setSuccess(input)
     }
 }
 
@@ -40,7 +38,7 @@ const setError = (input, textMessage) => {
     const parent = input.parentElement;        
     parent.classList.add('is-invalid');
     parent.classList.remove('is-valid');
-    parent.querySelectorAll('.invalid-input').innerText = textMessage;
+    parent.querySelector('.invalid-input').innerText = textMessage;
 }
 
 const setSuccess = input => {
