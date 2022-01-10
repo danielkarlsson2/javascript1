@@ -36,6 +36,14 @@ body, html {
 .btn-primary {
     background-color: var(--clr-primary);
     color: #000;
+    transition: background 100ms;
+}
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: #9b9b9b;
+}
+.btn-primary:active {
+    background-color: #747474;
 }
 
 #regForm {
@@ -101,7 +109,7 @@ body, html {
 
 .is-invalid .invalid-input {
     display: block;
-    /* visibility: visible; */
+    visibility: visible;
 }
 
 .is-valid .form-control {
