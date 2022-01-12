@@ -83,7 +83,7 @@ body, html {
 } 
 
 .input-group .form-control {
-    padding: .6rem 5rem;
+    padding: .6rem .5rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--clr-primary);
     
